@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR ASTAN - Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 6px solid #0056b3;
+            border-radius: 8px;
+        }
+        .section-header {
+            font-size: 1.5em;
+            color: #004085;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+            h1, h2 {
+                font-size: 2em;
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Button styles */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .back-button:hover {
+            background-color: #004085;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="dashboard.html" class="back-button">Back to Dashboard</a> <!-- Button for back to dashboard -->
+
+        <h1>DR ASTAN</h1>
+        <h2>Advanced Shopper Tracking and Analysis Network</h2>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">Introduction</div>
+                <p>
+                    DR ASTAN is an innovative system designed to track customer movements within retail stores and analyze shopper behavior in real time. By utilizing state-of-the-art AI and computer vision, we aim to provide retailers with actionable insights to enhance store layouts and boost sales.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Objective</div>
+                <p>
+                    Our goal is to automate the tracking of shopper behavior, capturing data such as foot traffic patterns and dwell times. DR ASTAN enables retailers to make data-driven decisions for an optimized shopping experience and higher customer satisfaction.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Methodology</div>
+                <p>Key technologies used in DR ASTAN:</p>
+                <ul>
+                    <li><strong>YOLO (You Only Look Once)</strong> - real-time object detection</li>
+                    <li><strong>DeepSORT</strong> - continuous customer tracking</li>
+                    <li><strong>OpenCV</strong> - zone mapping and video processing</li>
+                    <li><strong>Pandas</strong> - data storage and processing</li>
+                    <li><strong>Power BI</strong> - data visualization and reporting</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-header">How It Works</div>
+                <p>
+                    DR ASTAN captures real-time video feeds, analyzing shopper movements and interactions within store zones. Data is processed to extract key metrics such as entry/exit times, dwell times, and customer flow patterns. The processed data is stored in CSV format and visualized through interactive dashboards in Power BI.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Core Features</div>
+                <ul>
+                    <li>Real-time customer movement tracking</li>
+                    <li>Zone-based traffic analysis</li>
+                    <li>Heatmaps and visual traffic metrics</li>
+                    <li>Reporting on peak hours and high-interest areas</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Future Enhancements</div>
+                <ul>
+                    <li>Detailed heatmap generation for deeper zone analysis</li>
+                    <li>Time-based analysis to uncover trends</li>
+                    <li>Real-time alerts for overcrowding and bottlenecks</li>
+                    <li>Chatbot integration for rapid insights and responses</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Conclusion</div>
+                <p>
+                    DR ASTAN revolutionizes retail customer behavior tracking by providing detailed, actionable insights through real-time data analysis. Future developments include advanced AI integration for predictive analytics and expanding its use to various industries, such as malls, smart cities, and security.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2024 DR ASTAN Project Team
+        </footer>
+    </div>
+
+</body>
+</html>

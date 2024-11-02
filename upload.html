@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video - DR ASTAN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #D1E8FF; /* Light blue background */
+        }
+
+        .upload-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2C3E50;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #BDC3C7;
+            border-radius: 5px;
+            width: 100%;
+            background-color: #F9F9F9;
+            transition: border 0.3s;
+        }
+
+        input[type="file"]:hover {
+            border-color: #2C3E50;
+        }
+
+        .submit-btn {
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #34495E;
+        }
+
+        .back-btn {
+            margin-top: 10px;
+            text-decoration: none;
+            color: #2C3E50;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="upload-container">
+        <h1>Upload Video</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="video" accept="video/*" required>
+            <button type="submit" class="submit-btn">Upload</button>
+        </form>
+        <a href="dashboard.html" class="back-btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>
